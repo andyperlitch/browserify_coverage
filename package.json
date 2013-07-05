@@ -1,0 +1,22 @@
+{
+  "name": "deoptimizer_testing",
+  "version": "0.0.0",
+  "description": "Example testing suite setup for browserify project using mocha, chai, sinon, blanket",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "author": "andy perlitch",
+  "license": "BSD",
+  "devDependencies": {
+    "mocha": "~1.12.0",
+    "chai": "~1.7.2",
+    "browserify": "~2.23.1",
+    "beefy": "~0.4.0",
+    "browserify-deoptimizer": "~1.1.0"
+  },
+  "dependencies": {
+    "backbone": "~1.0.0"
+  }
+}
