@@ -1,0 +1,39 @@
+<html>
+<head>
+	<title>Unit Test Runner</title>
+	<link rel="stylesheet" href="../node_modules/mocha/mocha.css" type="text/css" media="screen" charset="utf-8">
+</head>
+<body>
+    <div id="mocha"></div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="../node_modules/mocha/mocha.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../node_modules/chai/chai.js" type="text/javascript" charset="utf-8"></script>
+	<script>
+	    mocha.setup('bdd');
+	    expect = chai.expect;
+	</script>
+    <script src="blanket.js" data-cover-flags="debug"></script> 
+    <script src="mocha.adaptor.js"></script>
+    
+    <!-- using browserify -->
+    <!-- 
+    <script src="test.scaffold.js" type="text/javascript" charset="utf-8"></script>
+    <script src="test.covered.js" type="text/javascript" charset="utf-8" data-cover></script>
+    <script src="test.suite.js" type="text/javascript" charset="utf-8"></script>
+    -->
+    
+    <!-- not using browserify -->
+    <script src="../node_modules/backbone/node_modules/underscore/underscore.js"></script>
+    <script src="../node_modules/backbone/backbone.js"></script>
+    <script type="text/javascript">console.log(Backbone.View, Backbone.Model, Backbone.Collection);</script>
+    <script src="../lib-no-br/a.js" data-cover></script>
+    <script src="../lib-no-br/a.spec.js"></script>
+    
+    
+    <script>
+        mocha.globals([ 'script*' ]).run();
+    </script>
+
+</body>
+</html>

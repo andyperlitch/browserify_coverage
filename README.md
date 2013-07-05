@@ -16,3 +16,8 @@ first, run:
     make test
     
 Then open [http://localhost:3334/test/runner.html](http://localhost:3334/test/runner.html).
+
+
+## Non-browserify Equivalent
+
+I have set up the equivalent `a.js` module and test without browserify to illustrate the main problem with the browserify approach I have so far. To see it, go to [http://localhost:3334/test/runner_nobr.html](http://localhost:3334/test/runner_nobr.html) after running `make test`.
