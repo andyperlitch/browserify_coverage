@@ -18,5 +18,5 @@ describe('module a', function() {
         expect(a.test2()).to.equal(false);
     });
 });
-},{"./a":"7j3ajI","backbone":"LYd1SC"}]},{},[1])
+},{"./a":"hDWlvW","backbone":"1ztuUG"}]},{},[1])
 ;
